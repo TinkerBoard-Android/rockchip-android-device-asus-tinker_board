@@ -41,7 +41,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.rk3288.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.rk3288.usb.rc \
     $(LOCAL_PATH)/wake_lock_filter.xml:system/etc/wake_lock_filter.xml \
     device/rockchip/$(TARGET_BOARD_PLATFORM)/package_performance.xml:$(TARGET_COPY_OUT_ODM)/etc/package_performance.xml \
-    device/rockchip/$(TARGET_BOARD_PLATFORM)/media_profiles_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+    $(LOCAL_PATH)/media_profiles_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
+    $(LOCAL_PATH)/media_profiles_imx219.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_imx219.xml
+
 
 ifeq ($(BOARD_CAMERA_SUPPORT),true)
 PRODUCT_COPY_FILES += \
@@ -104,7 +106,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/led/led.sh:$(TARGET_COPY_OUT_VENDOR)/bin/led.sh
 
 BOARD_SEPOLICY_DIRS += \
-    device/asus/tinker_board/sepolicy/led
+    device/asus/tinker_board/sepolicy/led \
+    device/asus/tinker_board/sepolicy/camera
 
 #
 ## setup boot-shutdown animation configs.
