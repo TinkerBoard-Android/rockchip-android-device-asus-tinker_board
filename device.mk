@@ -173,4 +173,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 ro.build.shutdown_timeout=6 \
                 persist.enable_task_snapshots=false \
                 ro.adb.secure=0 \
-                ro.rk.displayd.enable=false
+                ro.rk.displayd.enable=false \
+                vendor.hwc.device.primary=HDMI-A
