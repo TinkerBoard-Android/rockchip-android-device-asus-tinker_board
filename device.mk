@@ -174,4 +174,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 persist.enable_task_snapshots=false \
                 ro.adb.secure=0 \
                 ro.rk.displayd.enable=false \
-                vendor.hwc.device.primary=HDMI-A
+                vendor.hwc.device.primary=HDMI-A \
+                vendor.gralloc.no_afbc_for_fb_target_layer=1 \
+		vendor.gralloc.no_afbc_for_sf_client_layer=1
