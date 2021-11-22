@@ -156,4 +156,5 @@
          off features. -->
     <bool name="config_avoidGfxAccel">true</bool>
     <bool name="config_supportAutoRotation">false</bool>
+    <integer name="config_screenBrightnessSettingMinimum">15</integer>
 </resources>
