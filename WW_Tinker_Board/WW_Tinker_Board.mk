@@ -37,7 +37,3 @@ PRODUCT_BRAND := asus
 PRODUCT_MODEL := WW_Tinker_Board
 PRODUCT_MANUFACTURER := asus
 PRODUCT_AAPT_PREF_CONFIG := hdpi
-#
-## add Rockchip properties
-#
-PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=240
