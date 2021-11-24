@@ -36,6 +36,7 @@ ifeq ($(HOST_OS), linux)
 endif
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.tinker_board.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.tinker_board.rc \
     $(LOCAL_PATH)/init.rk3288.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.rk3288.rc \
     $(LOCAL_PATH)/init.rk3288.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.rk3288.usb.rc \
     $(LOCAL_PATH)/wake_lock_filter.xml:system/etc/wake_lock_filter.xml \
