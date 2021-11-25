@@ -8,3 +8,8 @@ on boot
     # backlight
     chown system system /sys/class/backlight/panel_backlight-0/brightness
     chown system system /sys/class/backlight/panel_backlight-1/brightness
+
+on property:sys.boot_completed=1
+    #HDMI CEC
+    chown root system /dev/cec0
+    chmod 0664 /dev/cec0
