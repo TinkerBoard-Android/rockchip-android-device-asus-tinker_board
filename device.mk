@@ -177,4 +177,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 ro.rk.displayd.enable=false \
                 vendor.hwc.device.primary=HDMI-A \
                 vendor.gralloc.no_afbc_for_fb_target_layer=1 \
-		vendor.gralloc.no_afbc_for_sf_client_layer=1
+                vendor.gralloc.no_afbc_for_sf_client_layer=1 \
+                persist.spdif_sounds=0
