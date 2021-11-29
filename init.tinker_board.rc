@@ -1,13 +1,22 @@
 on early-init
 
 on init
-
+    # led
+    start vendor.led
 on late-init
 
 on boot
     # backlight
     chown system system /sys/class/backlight/panel_backlight-0/brightness
     chown system system /sys/class/backlight/panel_backlight-1/brightness
+
+# led
+service vendor.led /vendor/bin/led.sh
+    class main
+    user root
+    group root
+    disabled
+    oneshot
 
 on property:sys.boot_completed=1
     #HDMI CEC

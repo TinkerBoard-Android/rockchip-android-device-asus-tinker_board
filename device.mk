@@ -99,6 +99,13 @@ endif
 PRODUCT_COPY_FILES += \
     device/asus/tinker_board/public.libraries.txt:vendor/etc/public.libraries.txt
 
+# led
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/led/led.sh:$(TARGET_COPY_OUT_VENDOR)/bin/led.sh
+
+BOARD_SEPOLICY_DIRS += \
+    device/asus/tinker_board/sepolicy/led
+
 #
 ## setup boot-shutdown animation configs.
 #
