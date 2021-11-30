@@ -110,6 +110,10 @@ BOARD_SEPOLICY_DIRS += \
     device/asus/tinker_board/sepolicy/led \
     device/asus/tinker_board/sepolicy/camera
 
+# Touch
+PRODUCT_COPY_FILES += \
+    device/asus/tinker_board/touch/fts_ts.idc:system/usr/idc/fts_ts.idc
+
 #
 ## setup boot-shutdown animation configs.
 #
