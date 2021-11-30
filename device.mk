@@ -99,6 +99,10 @@ PRODUCT_COPY_FILES += \
 BOARD_SEPOLICY_DIRS += \
     device/asus/tinker_board/sepolicy/VoltageDetectService
 
+# Touch
+PRODUCT_COPY_FILES += \
+    device/asus/tinker_board/touch/fts_ts.idc:system/usr/idc/fts_ts.idc
+
 #
 ## setup boot-shutdown animation configs.
 #
