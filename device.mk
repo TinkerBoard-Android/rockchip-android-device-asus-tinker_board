@@ -22,7 +22,8 @@ PRODUCT_PACKAGES += \
     Launcher3
 
 PRODUCT_PACKAGES += \
-    RockchipPinnerService
+    RockchipPinnerService \
+	VoltageDetectService
 
 #$_rbox_$_modify_$_zhengyang: add displayd
 PRODUCT_PACKAGES += \
