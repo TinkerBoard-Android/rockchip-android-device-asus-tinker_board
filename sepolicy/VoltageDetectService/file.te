@@ -1,0 +1,2 @@
+type sysfs_iio, fs_type, sysfs_type, mlstrustedobject;
+type proc_boardinfo, fs_type, proc_type;

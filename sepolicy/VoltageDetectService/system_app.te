@@ -1,0 +1,2 @@
+allow system_app sysfs_iio:file { open read };
+allow system_app proc_boardinfo:file { open read };

@@ -95,6 +95,9 @@ $(call inherit-product-if-exists, vendor/rockchip/$(TARGET_BOARD_PLATFORM)/devic
 PRODUCT_COPY_FILES += \
     device/rockchip/rk3288/public.libraries.txt:vendor/etc/public.libraries.txt
 
+BOARD_SEPOLICY_DIRS += \
+    device/asus/tinker_board/sepolicy/VoltageDetectService
+
 #
 ## setup boot-shutdown animation configs.
 #
