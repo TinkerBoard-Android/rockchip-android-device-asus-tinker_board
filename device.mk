@@ -108,7 +108,8 @@ PRODUCT_COPY_FILES += \
 
 BOARD_SEPOLICY_DIRS += \
     device/asus/tinker_board/sepolicy/led \
-    device/asus/tinker_board/sepolicy/camera
+    device/asus/tinker_board/sepolicy/camera \
+    device/asus/tinker_board/sepolicy/VoltageDetectService
 
 # Touch
 PRODUCT_COPY_FILES += \
