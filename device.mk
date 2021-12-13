@@ -216,3 +216,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.mount_all.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mount_all.rc
+
+BOARD_SEPOLICY_DIRS += \
+    device/asus/tinker_board/sepolicy/dtoverlay
