@@ -1,0 +1,13 @@
+/sys/firmware/devicetree/base/model u:object_r:sysfs_devicetree:s0
+/vendor/lib/libmraa.so  u:object_r:same_process_hal_file:s0
+/vendor/lib/libmraajava.so  u:object_r:same_process_hal_file:s0
+/vendor/lib/libc\+\+_shared.so    u:object_r:same_process_hal_file:s0
+/dev/gpiochip0  u:object_r:device_gpio:s0
+/dev/gpiochip1  u:object_r:device_gpio:s0
+/dev/gpiochip2  u:object_r:device_gpio:s0
+/dev/gpiochip3  u:object_r:device_gpio:s0
+/dev/gpiochip4  u:object_r:device_gpio:s0
+/dev/gpiochip5  u:object_r:device_gpio:s0
+/dev/gpiochip6  u:object_r:device_gpio:s0
+/dev/gpiochip7  u:object_r:device_gpio:s0
+/dev/gpiochip8  u:object_r:device_gpio:s0

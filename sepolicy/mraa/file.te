@@ -1,0 +1,2 @@
+type device_gpio, fs_type, dev_type, mlstrustedobject;
+type sysfs_devicetree, fs_type, sysfs_type, mlstrustedobject;

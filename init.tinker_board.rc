@@ -10,6 +10,26 @@ on boot
     chown system system /sys/class/backlight/panel_backlight-0/brightness
     chown system system /sys/class/backlight/panel_backlight-1/brightness
 
+    # For 40 pin gpio
+    chown system system /dev/gpiochip0
+    chown system system /dev/gpiochip1
+    chown system system /dev/gpiochip2
+    chown system system /dev/gpiochip3
+    chown system system /dev/gpiochip4
+    chown system system /dev/gpiochip5
+    chown system system /dev/gpiochip6
+    chown system system /dev/gpiochip7
+    chown system system /dev/gpiochip8
+    chmod 0666 /dev/gpiochip0
+    chmod 0666 /dev/gpiochip1
+    chmod 0666 /dev/gpiochip2
+    chmod 0666 /dev/gpiochip3
+    chmod 0666 /dev/gpiochip4
+    chmod 0666 /dev/gpiochip5
+    chmod 0666 /dev/gpiochip6
+    chmod 0666 /dev/gpiochip7
+    chmod 0666 /dev/gpiochip8
+
 # led
 service vendor.led /vendor/bin/led.sh
     class main

@@ -1,0 +1,3 @@
+allow shell sysfs_devicetree:file { open read write getattr setattr };
+allow shell sysfs_dev:file { open read write getattr setattr };
+allow shell device_gpio:chr_file { read write ioctl open };

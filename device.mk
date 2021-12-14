@@ -113,7 +113,8 @@ PRODUCT_COPY_FILES += \
 BOARD_SEPOLICY_DIRS += \
     device/asus/tinker_board/sepolicy/led \
     device/asus/tinker_board/sepolicy/camera \
-    device/asus/tinker_board/sepolicy/VoltageDetectService
+    device/asus/tinker_board/sepolicy/VoltageDetectService \
+    device/asus/tinker_board/sepolicy/mraa
 
 # Touch
 PRODUCT_COPY_FILES += \
@@ -219,3 +220,8 @@ PRODUCT_COPY_FILES += \
 
 BOARD_SEPOLICY_DIRS += \
     device/asus/tinker_board/sepolicy/dtoverlay
+# mraa
+PRODUCT_PACKAGES += \
+    libmraa \
+    libmraajava \
+    libc++_shared

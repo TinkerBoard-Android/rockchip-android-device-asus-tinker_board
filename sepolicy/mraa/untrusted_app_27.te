@@ -1,0 +1,8 @@
+allow untrusted_app_27 sysfs:dir { open read };
+allow untrusted_app_27 sysfs_devicetree:dir search;
+allow untrusted_app_27 sysfs_devicetree:file { getattr read open };
+allow untrusted_app_27 sysfs_dev:dir search;
+allow untrusted_app_27 sysfs_dev:file { getattr read open };
+allow untrusted_app_27 device:dir { open read };
+allow untrusted_app_27 device_gpio:chr_file { ioctl open read write };
+allow untrusted_app_27 device:chr_file ioctl;
