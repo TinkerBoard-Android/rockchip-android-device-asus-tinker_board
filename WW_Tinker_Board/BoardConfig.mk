@@ -36,10 +36,10 @@ BOARD_ROCKCHIP_VIRTUAL_AB_ENABLE := false
 
 ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
     include device/rockchip/common/BoardConfig_AB.mk
-    TARGET_RECOVERY_FSTAB := device/asus/tinker_board/Tinker_Board/recovery.fstab_AB
+    TARGET_RECOVERY_FSTAB := device/asus/tinker_board/WW_Tinker_Board/recovery.fstab_AB
 endif
 
-PRODUCT_FSTAB_TEMPLATE := device/asus/tinker_board/Tinker_Board/fstab.in
+PRODUCT_FSTAB_TEMPLATE := device/asus/tinker_board/WW_Tinker_Board/fstab.in
 
 # Allow deprecated BUILD_ module types to get DDK building
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true

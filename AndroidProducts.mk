@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/Tinker_Board/Tinker_Board.mk
+    $(LOCAL_DIR)/WW_Tinker_Board/WW_Tinker_Board.mk
 
 COMMON_LUNCH_CHOICES := \
-        Tinker_Board-userdebug \
-        Tinker_Board-user
+        WW_Tinker_Board-userdebug \
+        WW_Tinker_Board-user
 
