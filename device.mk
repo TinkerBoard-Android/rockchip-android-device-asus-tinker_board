@@ -201,6 +201,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 vendor.gralloc.no_afbc_for_sf_client_layer=1 \
                 persist.spdif_sounds=0
 
+#add properties for tcp adb
+PRODUCT_PROPERTY_OVERRIDES += persist.adb.tcp.port = 5555
+
 PRODUCT_COPY_FILES += \
     vendor/rockchip/common/bin/$(TARGET_ARCH)/e2fsck:recovery/root/sbin/e2fsck \
     vendor/rockchip/common/bin/$(TARGET_ARCH)/resize2fs:recovery/root/sbin/resize2fs \
