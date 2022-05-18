@@ -19,6 +19,9 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_DTBO_TEMPLATE := $(LOCAL_PATH)/dt-overlay.in
 PRODUCT_BOOT_DEVICE := ff0f0000.dwmmc,ff0c0000.dwmmc
 PRODUCT_SDMMC_DEVICE := ff0c0000.dwmmc
+# Put this before other configuration since PRODUCT specific flags might be set
+# in the following files.
+$(call inherit-product, device/asus/common/device.mk)
 include device/rockchip/common/build/rockchip/DynamicPartitions.mk
 include device/asus/tinker_board/WW_Tinker_Board/BoardConfig.mk
 include device/rockchip/common/BoardConfig.mk
