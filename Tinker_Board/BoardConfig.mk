@@ -44,3 +44,6 @@ BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 BUILD_BROKEN_USES_BUILD_HOST_EXECUTABLE := true
 BUILD_BROKEN_USES_BUILD_HOST_SHARED_LIBRARY := true
 BUILD_BROKEN_USES_BUILD_HOST_STATIC_LIBRARY := true
+
+# This needs to be configured here othereise this will be configured to the default one in device/rockchip/common/BoardConfig.mk.
+PRODUCT_FSTAB_TEMPLATE := device/asus/tinker_board/Tinker_Board/fstab.in
