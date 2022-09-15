@@ -2,6 +2,12 @@ on early-fs
     setprop sys.usb.controller "ff580000.usb"
     setprop sys.usb.configfs 1
 
+on fs
+    chmod 0755 /sbin/e2fsck
+    chmod 0755 /sbin/parted
+    chmod 0755 /sbin/resize2fs
+    chmod 0755 /sbin/sgdisk
+
 on fs && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/bcdDevice 0x0310
     write /config/usb_gadget/g1/bcdUSB 0x0200

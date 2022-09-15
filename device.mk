@@ -168,3 +168,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 persist.enable_task_snapshots=false \
                 ro.adb.secure=0 \
                 ro.rk.displayd.enable=false
+
+PRODUCT_COPY_FILES += \
+    vendor/rockchip/common/bin/$(TARGET_ARCH)/e2fsck:recovery/root/sbin/e2fsck \
+    vendor/rockchip/common/bin/$(TARGET_ARCH)/resize2fs:recovery/root/sbin/resize2fs \
+    device/asus/common/bin/$(TARGET_ARCH)/parted:recovery/root/sbin/parted \
+    device/asus/common/bin/$(TARGET_ARCH)/sgdisk:recovery/root/sbin/sgdisk
