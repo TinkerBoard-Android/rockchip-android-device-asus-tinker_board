@@ -167,7 +167,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 ro.build.shutdown_timeout=6 \
                 persist.enable_task_snapshots=false \
                 ro.adb.secure=0 \
-                ro.rk.displayd.enable=false
+                ro.rk.displayd.enable=false \
+                persist.spdif_sounds=0
 
 PRODUCT_COPY_FILES += \
     vendor/rockchip/common/bin/$(TARGET_ARCH)/e2fsck:recovery/root/sbin/e2fsck \
