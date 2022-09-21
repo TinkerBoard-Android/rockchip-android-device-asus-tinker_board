@@ -11,6 +11,10 @@ on property:sys.boot_completed=1
     chmod 0664 /dev/cec0
 
 on boot
+    # backlight
+    chown system system /sys/class/backlight/panel_backlight-0/brightness
+    chown system system /sys/class/backlight/panel_backlight-1/brightness
+
 # led
 service vendor.led /vendor/bin/led.sh
     class main
@@ -18,4 +22,3 @@ service vendor.led /vendor/bin/led.sh
     group root
     disabled
     oneshot
-
