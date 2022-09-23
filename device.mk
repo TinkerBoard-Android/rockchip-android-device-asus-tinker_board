@@ -129,6 +129,9 @@ endif
 
 BOARD_SEPOLICY_DIRS += device/rockchip/rk3288/sepolicy_vendor
 
+# Include thermal HAL module
+BOARD_ROCKCHIP_THERMAL := true
+
 #
 # add Rockchip properties here
 #
