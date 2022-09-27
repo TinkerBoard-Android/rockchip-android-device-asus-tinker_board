@@ -42,3 +42,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 ## add Rockchip properties
 #
 PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=280
+
+# Append the manifest files for Tinker Board (S) here since this will be defined
+# in device/rockchip/common/BoardConfig.mk to use the default one.
+DEVICE_MANIFEST_FILE += device/asus/tinker_board/manifest.xml
