@@ -176,7 +176,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 persist.enable_task_snapshots=false \
                 ro.adb.secure=0 \
                 ro.rk.displayd.enable=false \
-                persist.spdif_sounds=0
+                persist.spdif_sounds=0 \
+                vendor.hwc.device.primary=HDMI-A
 
 PRODUCT_COPY_FILES += \
     vendor/rockchip/common/bin/$(TARGET_ARCH)/e2fsck:recovery/root/sbin/e2fsck \
