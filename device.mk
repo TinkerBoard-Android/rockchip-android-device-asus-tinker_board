@@ -182,7 +182,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 ro.adb.secure=0 \
                 ro.rk.displayd.enable=false \
                 persist.spdif_sounds=0 \
-                vendor.hwc.device.primary=HDMI-A
+                vendor.hwc.device.primary=HDMI-A \
+                vendor.gralloc.no_afbc_for_fb_target_layer=1 \
+                vendor.gralloc.no_afbc_for_sf_client_layer=1
 
 PRODUCT_COPY_FILES += \
     vendor/rockchip/common/bin/$(TARGET_ARCH)/e2fsck:recovery/root/sbin/e2fsck \
