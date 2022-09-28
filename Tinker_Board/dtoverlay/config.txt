@@ -1,0 +1,40 @@
+##### Hardware Interface Config #####
+
+## Note: fiq_debugger and uart3 use the same pin. Set fiq_debugger first while both on. ##
+## Note: uart4 and spi0 are the same pins. Set the latter one while both on. ##
+## Note: uart2 is the same pins to pwm2 and pwm3. Set the latter one while both on. ##
+
+intf:fiq_debugger=on
+#intf:i2c1=off
+#intf:i2c4=off
+#intf:spi0=off
+#intf:spi2=off
+#intf:pwm2=off
+#intf:pwm3=off
+intf:pcm_i2s=on
+#intf:uart1=off
+#intf:uart2=off
+#intf:uart3=off
+#intf:uart4=off
+
+##### Driver Config #####
+
+## Note: auto_ums: Auto enable ums mode while power on with USB connected. ##
+
+conf:auto_ums=on
+
+##### Tinker Power Management #####
+
+cpu_governor=ondemand
+a17_minfreq=126000
+a17_maxfreq=1800000
+
+gpu_governor=simple_ondemand
+t76x_minfreq=200000000
+t76x_maxfreq=600000000
+
+##### List of device tree overlays to load. Format: overlay=<dtbo name, no extension> <dtbo2> ... #####
+
+## Note: Put dtbo files under the overlays folder. ##
+
+overlay=
