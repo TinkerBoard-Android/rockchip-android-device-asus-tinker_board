@@ -131,3 +131,6 @@ BOARD_SUPPORT_MULTIAUDIO := false
 
 # Remove the support for Rockchip PCBA Test
 TARGET_ROCKCHIP_PCBATEST := false
+
+# Add the partition dtoverlay
+BOARD_USES_DTOVERLAY_PARTITION := true
