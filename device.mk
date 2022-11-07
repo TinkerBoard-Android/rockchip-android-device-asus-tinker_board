@@ -97,7 +97,8 @@ PRODUCT_COPY_FILES += \
     device/rockchip/rk3288/public.libraries.txt:vendor/etc/public.libraries.txt
 
 BOARD_SEPOLICY_DIRS += \
-    device/asus/tinker_board/sepolicy/VoltageDetectService
+    device/asus/tinker_board/sepolicy/VoltageDetectService \
+    device/asus/tinker_board/sepolicy/AsusDebugger
 
 # Touch
 PRODUCT_COPY_FILES += \
