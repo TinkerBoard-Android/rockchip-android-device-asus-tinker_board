@@ -144,8 +144,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += ro.boot.copy_oem=true
 endif
 
-BOARD_SEPOLICY_DIRS += device/rockchip/rk3288/sepolicy_vendor
-
 # hdmi cec
 ifneq ($(filter atv box tablet, $(strip $(TARGET_BOARD_PLATFORM_PRODUCT))), )
 BOARD_SHOW_HDMI_SETTING := true
