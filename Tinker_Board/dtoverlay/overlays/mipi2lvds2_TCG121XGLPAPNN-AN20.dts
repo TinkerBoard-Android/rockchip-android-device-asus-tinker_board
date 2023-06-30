@@ -27,6 +27,8 @@
 				lvds-format = <2>;//VESA
 				lvds-bpp = <24>;
                 de-mode;
+				reg33 = /bits/ 8 <0x02>;
+				reg35 = /bits/ 8 <0x04>;
 				//test-pattern;
 			};
 		};
